@@ -1,0 +1,6 @@
+<p>Receive exclusive personalized content right in your inbox</p>
+<form id="subscribe-form" action="https://your-form-target.com/" method="get">
+  <input id="form-name" type="text" placeholder="Your Name"/>
+  <input id="form-email" type="email" placeholder="Your Email"/>
+  <input id="form-submit" type="submit" value="Subscribe"/>
+</form>

@@ -1,0 +1,103 @@
+/*!
+Revenue Pro Editor Styles
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700&display=swap");
+body, p, .editor-default-block-appender .editor-default-block-appender__content {
+  font-size: 20px;
+}
+
+/** === Editor Frame === */
+body .wp-block[data-align="full"] {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  body .wp-block[data-align="full"] {
+    width: calc( 100% + 90px);
+    max-width: calc( 100% + 90px);
+  }
+}
+
+@media (min-width: 768px) {
+  body .editor-writing-flow {
+    max-width: 80%;
+    margin: 0 10%;
+  }
+  body .editor-post-title__block,
+  body .editor-default-block-appender,
+  body .editor-block-list__block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .wp-block[data-align="wide"] {
+    width: 100%;
+  }
+  body .wp-block[data-align="full"] {
+    position: relative;
+    left: calc( -12.5% - 14px);
+    width: calc( 125% + 116px);
+    max-width: calc( 125% + 115px);
+  }
+  body .wp-block[data-align="right"] {
+    max-width: 125%;
+  }
+}
+
+/** === Content Width === */
+.wp-block {
+  width: calc(100vw - (2 * 1em));
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .wp-block {
+    width: calc(8 * (100vw / 12));
+  }
+}
+
+@media (min-width: 1280px) {
+  .wp-block {
+    width: calc(6 * (100vw / 12 ));
+  }
+}
+
+.wp-block .wp-block {
+  width: 100%;
+}
+
+/** === Base Typography === */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  color: #4d626e;
+}
+
+/** === Post Title === */
+.editor-post-title__block .editor-post-title__input {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4d626e;
+  font-size: 45px;
+}
+
+/** === Default Appender === */
+.editor-default-block-appender .editor-default-block-appender__content {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wp-block-heading strong {
+  font-weight: bold;
+}
+
+/** === Paragraph === */
+.wp-block-paragraph.has-drop-cap:not(:focus)::first-letter {
+  font-size: 120px;
+}
+
+.wp-block-paragraph.has-drop-cap:not(:focus)::after {
+  padding-top: 0;
+  display: inline;
+}
+
+/*# sourceMappingURL=style-editor.css.map */
